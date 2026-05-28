@@ -4,6 +4,7 @@ import Link from "next/link";
 import styles from "./hero.module.css";
 import { useAppConfigStore } from "@/store/app-config-store";
 import { useEffect } from "react";
+import Image from "next/image";
 
 export default function Hero() {
   const appConfig = useAppConfigStore((state) => state.appConfig);
@@ -19,10 +20,13 @@ export default function Hero() {
 
   return (
     <section className={styles.hero}>
-      <div className="container">
+      <div className={styles.container}>
         <div className={styles.content}>
-          <div className={styles.badge}>Built for Small Businesses</div>
-          <h1 className={styles.title}>Generate UPI QR Codes Instantly</h1>
+            <div>
+              <Image src="/logo.png" alt="app-logo" width={64} height={64}/>
+            </div>
+          <div className={styles.badge}>FixedQR</div>
+          <h1 className={styles.title}>Instant UPI QR Code Generator</h1>
 
           <p className={styles.description}>
             FixedQR helps shop owners generate payment QR codes faster, reuse
