@@ -2,21 +2,21 @@
 
 import Link from "next/link";
 import styles from "./hero.module.css";
-import { useAppConfigStore } from "@/store/app-config-store";
 import { useEffect } from "react";
 import Image from "next/image";
+import { useAppUpdateStore } from "@/store/app-update-store";
 
 export default function Hero() {
-  const appConfig = useAppConfigStore((state) => state.appConfig);
-  const loading = useAppConfigStore((state) => state.loading);
-  const error = useAppConfigStore((state) => state.error);
-  const fetchAppConfig = useAppConfigStore((state) => state.fetchAppConfig);
+  const checkAppUpdate = useAppUpdateStore(state => state.checkAppUpdate)
+  const isLoading = useAppUpdateStore(state => state.isLoading)
+  const appUpdate = useAppUpdateStore(state => state.appUpdate)
+  const error = useAppUpdateStore(state => state.error)
 
   useEffect(() => {
-    if (!appConfig && !loading && !error) {
-      fetchAppConfig();
+    if (!isLoading && !appUpdate && !error) {
+      checkAppUpdate();
     }
-  }, [appConfig, loading, error, fetchAppConfig]);
+  }, [checkAppUpdate]);
 
   return (
     <section className={styles.hero}>
@@ -36,7 +36,7 @@ export default function Hero() {
 
           <div className={styles.actions}>
             <Link
-              href={appConfig?.release.downloadUrl || ""}
+              href={appUpdate ? appUpdate.downloadUrl : ""}
               download
               target="_blank"
               className={styles.primaryButton}
@@ -45,7 +45,7 @@ export default function Hero() {
             </Link>
 
             <a
-              href="https://github.com/fixed-qr"
+              href="https://github.com/fixed-qr/fixed-qr"
               target="_blank"
               className={styles.secondaryButton}
             >

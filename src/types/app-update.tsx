@@ -1,4 +1,4 @@
-export interface Release {
+export interface AppUpdate {
   version: string;
   versionCode: number;
   title: string;
@@ -6,9 +6,4 @@ export interface Release {
   downloadUrl: string;
   publishedAt: string;
   notes: string[];
-}
-
-export interface AppConfig {
-  status: "online" | "maintenance";
-  release: Release;
 }
