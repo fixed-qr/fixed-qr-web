@@ -1,52 +1,43 @@
-# FixedQR
+# 🚀 FixedQR
 
-**FixedQR** is a lightweight mobile application designed to simplify everyday UPI payments for small businesses.
+**FixedQR** is a lightweight mobile app built to simplify **UPI payments for small businesses** by enabling instant generation of **fixed-amount UPI QR codes**.
 
-The app allows shop owners and vendors to generate **UPI payment QR codes instantly** for any amount while automatically remembering frequently used amounts for quick reuse.
+## 💡 Why FixedQR Exists
 
-Built with speed, simplicity, and usability in mind, FixedQR helps reduce repetitive manual work during busy payment workflows.
+While observing local shops and vendors, a common checkout pattern stood out:
 
-# The Problem FixedQR Solves
+A customer’s total is **₹525**.
+After scanning a regular QR code, they often say:
 
-In many local shops and small businesses, payment amounts frequently change during checkout.
+> “Make it ₹500.”
 
-For example:
+Since most QR codes are not pre-set with amounts, vendors frequently end up negotiating, rounding, or re-generating QR codes during checkout.
 
-* A customer’s total is ₹525
-* The customer asks to pay ₹500
-* Or requests a rounded amount like ₹510
+Although this seems small, it slows down transactions and affects daily operational efficiency.
 
-In these situations, shop owners often need to:
+**FixedQR was built to remove this friction entirely.**
 
-* Re-enter the updated amount manually
-* Generate another QR code
-* Repeat the same process many times throughout the day
+It allows businesses to generate **pre-filled, fixed-amount UPI QR codes instantly**, making payments faster, clearer, and more consistent.
 
-Although this seems minor, repeated manual entry during peak business hours slows down billing, increases customer waiting time, and creates unnecessary friction.
-
-FixedQR solves this by making QR regeneration fast and effortless.
-
-# What FixedQR Does
+## ⚡ What FixedQR Does
 
 FixedQR helps businesses:
 
-* Generate UPI QR codes instantly
-* Save frequently used payment amounts automatically
-* Reuse saved amounts with one tap
-* Speed up the payment collection process
-* Reduce repetitive manual input during checkout
+- Generate UPI QR codes instantly with a fixed amount
+- Save frequently used payment amounts automatically
+- Reuse saved amounts with one tap
+- Speed up checkout and reduce manual input
+- Improve overall payment flow efficiency
 
-# Key Features
+## ✨ Key Features
 
-## Instant QR Code Generation
+### ⚡ Instant UPI QR Generation
 
-Enter any amount and generate a UPI payment QR code instantly.
+Enter any amount and instantly generate a UPI payment QR code that customers can scan using any UPI app.
 
-Customers can scan the QR code using any UPI-supported application and complete the payment directly.
+### 🔁 Quick Amount Shortcuts
 
-## Quick Amount Shortcuts
-
-FixedQR automatically stores previously used amounts and displays them as reusable quick-access buttons.
+FixedQR automatically remembers previously used amounts and displays them as quick-access buttons.
 
 Example:
 
@@ -54,257 +45,59 @@ Example:
 ₹10   ₹20   ₹50   ₹100   ₹150
 ```
 
-Tap any saved amount to instantly regenerate the same QR code without typing again.
+Tap once → QR regenerates instantly.
 
-This is especially useful for businesses handling repeated payment values throughout the day.
+### 💾 Local-First Storage
 
-## Simple Account Setup
+All frequently used data is stored locally on the device to ensure:
 
-* Easy sign-up using name and password
-* Quick login experience
-* Minimal setup process
+- Better privacy
+- Faster performance
+- Offline reliability
+- Reduced dependency on cloud systems
 
-## UPI ID Management
+## FixedQR is designed for:
 
-* Add and manage your UPI ID
-* Generate QR codes linked to your payment account
-* Update your UPI ID anytime
+- Grocery stores 🛒
+- Food vendors 🍔
+- Retail counters 🏪
+- Street vendors 🛵
+- Small businesses 💼
 
-## Local-First Data Storage
+## 📊 Benefits
 
-One of the core design decisions behind FixedQR is to keep application data stored locally on the device rather than relying heavily on cloud infrastructure.
+FixedQR improves daily operations by:
 
-This approach helps:
+- Reducing checkout time
+- Eliminating repetitive amount entry
+- Improving transaction flow
+- Minimizing customer waiting time
+- Increasing operational efficiency
 
-* Improve user privacy
-* Reduce unnecessary server dependency
-* Keep the app lightweight and responsive
-* Give users better control over their data
+Even saving a few seconds per transaction creates meaningful impact at scale.
 
-## Fast & Lightweight Experience
-
-* Smooth and responsive performance
-* Minimal steps to generate payment QR codes
-* Optimised for daily business operations
-* Designed for speed and simplicity
-
-# How It Works
-
-```text
-Open App
-   ↓
-Create Account
-   ↓
-Add UPI ID
-   ↓
-Enter Payment Amount
-   ↓
-Generate QR Code
-   ↓
-Customer Scans & Pays
-   ↓
-Amount Saved as Shortcut
-   ↓
-Reuse Anytime
-```
-
-# Benefits
-
-FixedQR helps businesses:
-
-* Collect payments faster
-* Reduce repetitive amount entry
-* Improve checkout speed
-* Minimise customer waiting time
-* Simplify daily payment handling
-* Improve operational efficiency during busy hours
-
-Even saving a few seconds per transaction can make a significant difference for businesses handling hundreds of small payments daily.
-
-# Designed For
-
-FixedQR is ideal for:
-
-* Grocery stores
-* Tea stalls
-* Food vendors
-* Retail counters
-* Street vendors
-* Service counters
-* Small local businesses
-* Any business handling frequent UPI transactions
-
-# Product Philosophy
-
-FixedQR was built with a focus on solving a simple but highly repetitive operational problem.
-
-Key priorities during development included:
-
-* Creating a frictionless payment workflow
-* Keeping the interface clean and intuitive
-* Prioritising speed and usability
-* Reducing repetitive manual actions
-* Improving privacy with local-first storage
-
-The goal is not complexity - it is efficiency in everyday business operations.
-
-# Important Note
+## ⚠️ Important Note
 
 FixedQR only helps generate UPI payment QR codes.
 
-The app:
+It:
 
-* Does not process payments
-* Does not hold money
-* Does not function as a banking service
-* Does not verify transaction completion
+- ❌ Does not process payments
+- ❌ Does not store money
+- ❌ Does not act as a bank or payment gateway
+- ❌ Does not verify transactions
 
-All payments are completed through third-party UPI applications used by customers.
+All payments are completed via third-party UPI applications.
 
-# Terms of Service
+## 📱 Download
 
-**Effective Date:** May 20, 2026
+👉 Android App:
+[https://fixed-qr.netlify.app](https://fixed-qr.netlify.app)
 
-Welcome to FixedQR. By using the app, you agree to the following Terms of Service.
+## 🤝 Feedback
 
-## 1. Service Overview
+Feedback and suggestions are always welcome.
 
-FixedQR enables users to generate UPI QR codes for custom payment amounts and save frequently used amounts for faster reuse.
-
-FixedQR is not a payment gateway, financial institution, or banking platform.
-
-## 2. User Responsibilities
-
-By using FixedQR, you agree to:
-
-* Provide a valid UPI ID
-* Verify received payments independently
-* Keep your account credentials secure
-* Use the application legally and responsibly
-
-Users must not use the app for:
-
-* Fraudulent activities
-* Unauthorised payment collection
-* Illegal transactions or misuse
-
-## 3. Payments & Transactions
-
-All payments are handled through third-party UPI applications.
-
-FixedQR:
-
-* Does not process payments
-* Does not store money
-* Does not verify transactions
-* Does not guarantee payment success
-
-Users are solely responsible for confirming received payments.
-
-## 4. Account & Data
-
-To provide core app functionality, FixedQR may store:
-
-* Name
-* Login credentials
-* UPI ID
-* Previously used payment amounts
-
-Most application data is stored locally on the user’s device to improve privacy, speed, and reliability.
-
-## 5. Limitation of Liability
-
-FixedQR is provided on an “as is” and “as available” basis without warranties of any kind.
-
-We are not responsible for:
-
-* Failed or delayed transactions
-* Incorrect payments
-* Payment disputes
-* Data loss
-* Service interruptions
-* Third-party UPI application issues
-
-## 6. Updates to Terms
-
-We may update these Terms of Service periodically.
-
-Continued use of the app after updates constitutes your acceptance of the revised Terms.
-
-# Privacy Policy
-
-**Effective Date:** May 20, 2026
-
-FixedQR respects your privacy and is committed to protecting your information.
-
-## 1. Information We Collect
-
-FixedQR collect and stores some information, including:
-
-* Name
-* Password
-* UPI ID
-* Previously used payment amounts
-* Basic device and application usage information
-
-## 2. How Information Is Used
-
-Collected information is used to:
-
-* Generate UPI payment QR codes
-* Save quick amount shortcuts
-* Improve application performance
-* Maintain app functionality and security
-
-We do not sell personal information to third parties.
-
-## 3. Local Device Storage
-
-Most application data is stored locally on the user’s device.
-
-This local-first approach helps:
-
-* Improve privacy
-* Reduce unnecessary cloud dependency
-* Improve app responsiveness
-* Minimise external data sharing
-
-Users remain responsible for securing access to their devices.
-
-## 4. Payments & Financial Information
-
-FixedQR does not process payments and does not store:
-
-* Bank account details
-* Card information
-* UPI PINs
-* Financial passwords
-
-All transactions are handled through third-party UPI applications.
-
-## 5. Data Security
-
-We take reasonable measures to protect user information.
-
-However, no digital system can guarantee complete security. Users are responsible for protecting their device access and account credentials.
-
-## 6. Third-Party Services
-
-The app may use trusted third-party services for:
-
-* Analytics
-* Authentication
-* Crash reporting
-* Performance monitoring
-
-These services may operate under their own privacy policies.
-
-## 7. Policy Updates
-
-We may update this Privacy Policy from time to time.
-
-Continued use of the app after updates indicates acceptance of the revised policy.
-
-# Support
+## 🛠 Support
 
 **Email:** [fixedqr@gmail.com](mailto:fixedqr@gmail.com)
